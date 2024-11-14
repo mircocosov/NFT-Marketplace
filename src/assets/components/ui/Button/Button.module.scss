@@ -1,5 +1,26 @@
 @import "@/assets/css/config.scss";
 
 .button {
-  font-family: "Work Sans", sans-serif;
+  font: $paragraph-2-b;
+  color: $white;
+
+  &.primary {
+    background: $purple;
+    border: none;
+  }
+
+  &.secondary {
+    border: $purple 2px solid;
+    border-radius: $radius;
+  }
+
+  &.text {
+    border: none;
+    background: none;
+  }
+
+  &.outline {
+    background: $white;
+    color: $grey-1;
+  }
 }

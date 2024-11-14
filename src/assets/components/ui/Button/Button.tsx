@@ -5,7 +5,7 @@ import cn from "classnames"
 
 export interface ButtonProps {
   className?: string | null
-  type: "primary" | "secondary" | "text" | "outline" | "base"
+  type: "primary" | "secondary" | "text" | "outline"
   link?: string
   children?: ReactNode
 }
