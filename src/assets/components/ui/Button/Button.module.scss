@@ -1,7 +1,7 @@
 @import "@/assets/css/config.scss";
 
 .button {
-  font: $paragraph-2-b;
+  @include paragraph-2-b;
   color: $white;
 
   &.primary {
