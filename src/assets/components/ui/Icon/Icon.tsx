@@ -1,39 +1,51 @@
 import styles from "./Icon.module.scss"
 import cn from "classnames"
 
+import BasketballIcon from "@/assets/icons/basketball.svg"
+import CameraIcon from "@/assets/icons/camera.svg"
+import LogoIcon from "@/assets/icons/logo.svg"
+import MagicStickIcon from "@/assets/icons/magic-stick.svg"
+import MusicNotesIcon from "@/assets/icons/music-notes.svg"
+import PaintBrushIcon from "@/assets/icons/paint-brush.svg"
+import PlanetIcon from "@/assets/icons/planet.svg"
+import RocketIcon from "@/assets/icons/rocket.svg"
+import SwatchesIcon from "@/assets/icons/swatches.svg"
+import UserIcon from "@/assets/icons/user.svg"
+import VideoCameraIcon from "@/assets/icons/video.svg"
+
 const ICONS = {
   basketball: {
-    icon: import("@/assets/icons/basketball.svg"),
+    icon: BasketballIcon,
   },
   camera: {
-    icon: import("@/assets/icons/camera.svg"),
+    icon: CameraIcon,
   },
   logo: {
-    icon: import("@/assets/icons/logo.svg"),
+    icon: LogoIcon,
   },
   magicStick: {
-    icon: import("@/assets/icons/magic-stick.svg"),
+    icon: MagicStickIcon,
   },
   musicNotes: {
-    icon: import("@/assets/icons/music-notes.svg"),
+    icon: MusicNotesIcon,
   },
   paintBrush: {
-    icon: import("@/assets/icons/paint-brush.svg"),
+    icon: PaintBrushIcon,
   },
   planet: {
-    icon: import("@/assets/icons/planet.svg"),
+    icon: PlanetIcon,
   },
   rocket: {
-    icon: import("@/assets/icons/rocket.svg"),
+    icon: RocketIcon,
   },
   swatches: {
-    icon: import("@/assets/icons/swatches.svg"),
+    icon: SwatchesIcon,
   },
   user: {
-    icon: import("@/assets/icons/user.svg"),
+    icon: UserIcon,
   },
   videoCamera: {
-    icon: import("@/assets/icons/video.svg"),
+    icon: VideoCameraIcon,
   },
 }
 
@@ -42,12 +54,12 @@ interface Props {
   icon: keyof typeof ICONS
 }
 
-export default function Icon({ className, icon }: Props) {
-  const Icon = ICONS[icon]
+export default function Icon({ icon, className }: Props) {
+  const IconComponent = ICONS[icon].icon
 
   return (
     <div className={cn("icon", styles.container, className)}>
-      <Icon.icon />
+      <IconComponent />
     </div>
   )
 }
