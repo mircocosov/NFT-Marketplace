@@ -14,6 +14,10 @@ import UserIcon from "@/assets/icons/user.svg"
 import VideoCameraIcon from "@/assets/icons/video.svg"
 import Envelope from "@/assets/icons/envelope.svg"
 import Eye from "@/assets/icons/eye.svg"
+import Discord from "@/assets/icons/discord.svg"
+import Instagram from "@/assets/icons/instagram.svg"
+import Twitter from "@/assets/icons/twitter.svg"
+import Youtube from "@/assets/icons/youtube.svg"
 
 const ICONS = {
   basketball: {
@@ -54,6 +58,18 @@ const ICONS = {
   },
   eye: {
     icon: Eye,
+  },
+  discord: {
+    icon: Discord,
+  },
+  instagram: {
+    icon: Instagram,
+  },
+  twitter: {
+    icon: Twitter,
+  },
+  youtube: {
+    icon: Youtube,
   },
 }
 
