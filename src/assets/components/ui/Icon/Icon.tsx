@@ -18,6 +18,9 @@ import Discord from "@/assets/icons/discord.svg"
 import Instagram from "@/assets/icons/instagram.svg"
 import Twitter from "@/assets/icons/twitter.svg"
 import Youtube from "@/assets/icons/youtube.svg"
+import Coinbase from "@/assets/icons/coinbase.svg"
+import Metamask from "@/assets/icons/metamask.svg"
+import Wallet from "@/assets/icons/wallet.svg"
 
 const ICONS = {
   basketball: {
@@ -70,6 +73,15 @@ const ICONS = {
   },
   youtube: {
     icon: Youtube,
+  },
+  coinbase: {
+    icon: Coinbase,
+  },
+  metamask: {
+    icon: Metamask,
+  },
+  wallet: {
+    icon: Wallet,
   },
 }
 
