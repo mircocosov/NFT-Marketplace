@@ -13,6 +13,7 @@ import SwatchesIcon from "@/assets/icons/swatches.svg"
 import UserIcon from "@/assets/icons/user.svg"
 import VideoCameraIcon from "@/assets/icons/video.svg"
 import Envelope from "@/assets/icons/envelope.svg"
+import Eye from "@/assets/icons/eye.svg"
 
 const ICONS = {
   basketball: {
@@ -50,6 +51,9 @@ const ICONS = {
   },
   envelope: {
     icon: Envelope,
+  },
+  eye: {
+    icon: Eye,
   },
 }
 
