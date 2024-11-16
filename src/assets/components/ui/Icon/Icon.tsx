@@ -21,6 +21,9 @@ import Youtube from "@/assets/icons/youtube.svg"
 import Coinbase from "@/assets/icons/coinbase.svg"
 import Metamask from "@/assets/icons/metamask.svg"
 import Wallet from "@/assets/icons/wallet.svg"
+import Basket from "@/assets/icons/basket.svg"
+import Folder from "@/assets/icons/folder.svg"
+import Purse from "@/assets/icons/purse.svg"
 
 const ICONS = {
   basketball: {
@@ -82,6 +85,15 @@ const ICONS = {
   },
   wallet: {
     icon: Wallet,
+  },
+  basket: {
+    icon: Basket,
+  },
+  folder: {
+    icon: Folder,
+  },
+  purse: {
+    icon: Purse,
   },
 }
 
