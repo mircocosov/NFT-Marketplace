@@ -5,6 +5,7 @@ import Basket from "@/assets/icons/basket.svg"
 import BasketballIcon from "@/assets/icons/basketball.svg"
 import CameraIcon from "@/assets/icons/camera.svg"
 import Coinbase from "@/assets/icons/coinbase.svg"
+import Copy from "@/assets/icons/copy.svg"
 import Discord from "@/assets/icons/discord.svg"
 import Envelope from "@/assets/icons/envelope.svg"
 import Eye from "@/assets/icons/eye.svg"
@@ -17,7 +18,8 @@ import Menu from "@/assets/icons/menu.svg"
 import Metamask from "@/assets/icons/metamask.svg"
 import MusicNotesIcon from "@/assets/icons/music-notes.svg"
 import PaintBrushIcon from "@/assets/icons/paint-brush.svg"
-import PlanetIcon from "@/assets/icons/planet.svg"
+import Planet from "@/assets/icons/planet.svg"
+import Plus from "@/assets/icons/plus.svg"
 import Purse from "@/assets/icons/purse.svg"
 import RocketIcon from "@/assets/icons/rocket.svg"
 import SwatchesIcon from "@/assets/icons/swatches.svg"
@@ -39,6 +41,9 @@ const ICONS = {
   },
   coinbase: {
     icon: Coinbase,
+  },
+  copy: {
+    icon: Copy,
   },
   discord: {
     icon: Discord,
@@ -77,7 +82,10 @@ const ICONS = {
     icon: PaintBrushIcon,
   },
   planet: {
-    icon: PlanetIcon,
+    icon: Planet,
+  },
+  plus: {
+    icon: Plus,
   },
   purse: {
     icon: Purse,
