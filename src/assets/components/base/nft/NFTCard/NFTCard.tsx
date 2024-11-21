@@ -1,51 +1,35 @@
 import style from "./NFTCard.module.scss"
 import cn from "classnames"
 import Image from "@/assets/components/ui/Image"
+import { NFT } from "@/types/nft"
 
 interface Props {
   className?: string
-  src: string
-  alt: string
-  title: string
-  avtor: string
-  avtorSrc: string
-  avtorAlt: string
-  price: string
-  highestBid: string
+  nft: NFT
 }
 
-export default function NFTCard({
-  className,
-  src,
-  alt,
-  title,
-  avtor,
-  avtorSrc,
-  avtorAlt,
-  price,
-  highestBid,
-}: Props) {
+export default function NFTCard({ className, nft }: Props) {
   return (
     <div className={cn(style.card, className)}>
       <div className={style.cardImage}>
-        <Image src={src} alt={alt} className={style.image} />
+        <Image src={nft.src} alt={nft.alt} className={style.image} />
       </div>
       <div className={style.cardInfo}>
         <div className={style.artistInfo}>
-          <h5 className={style.title}>{title}</h5>
-          <div className={avtor}>
-            <Image src={avtorSrc} alt={avtorAlt} />
-            <p className={style.avtor}>{avtor}</p>
+          <h5 className={style.title}>{nft.title}</h5>
+          <div className={nft.avtor}>
+            <Image src={nft.avtorSrc} alt={nft.avtorAlt} />
+            <p className={style.avtor}>{nft.avtor}</p>
           </div>
         </div>
         <div className={style.priceInfo}>
           <div className={style.price}>
             <p className={style.infoText}>Price</p>
-            <p className={style.infoValue}>{price}</p>
+            <p className={style.infoValue}>{nft.price}</p>
           </div>
           <div className={style.highestBid}>
             <p className={style.infoText}>Highest Bid</p>
-            <p className={style.infoValue}>{highestBid}</p>
+            <p className={style.infoValue}>{nft.highestBid}</p>
           </div>
         </div>
       </div>
