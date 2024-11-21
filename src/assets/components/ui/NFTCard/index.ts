@@ -1,3 +1,3 @@
-import NFTCard from "@/assets/components/ui/NFTCard/NFTCard"
+import NFTCard from "./NFTCard"
 
 export default NFTCard
