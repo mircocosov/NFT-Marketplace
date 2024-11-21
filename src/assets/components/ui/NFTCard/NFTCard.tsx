@@ -6,7 +6,7 @@ interface Props {
   className?: string
   src: string
   alt: string
-  titel: string
+  title: string
   avtor: string
   avtorSrc: string
   avtorAlt: string
@@ -18,7 +18,7 @@ export default function NFTCard({
   className,
   src,
   alt,
-  titel,
+  title,
   avtor,
   avtorSrc,
   avtorAlt,
@@ -28,24 +28,24 @@ export default function NFTCard({
   return (
     <div className={cn(style.card, className)}>
       <div className={style.cardImage}>
-        <Image src={src} alt={alt} />
+        <Image src={src} alt={alt} className={style.image} />
       </div>
       <div className={style.cardInfo}>
         <div className={style.artistInfo}>
-          <h5>{titel}</h5>
+          <h5 className={style.title}>{title}</h5>
           <div className={avtor}>
             <Image src={avtorSrc} alt={avtorAlt} />
-            <p>{avtor}</p>
+            <p className={style.avtor}>{avtor}</p>
           </div>
         </div>
         <div className={style.priceInfo}>
           <div className={style.price}>
-            <p>Price</p>
-            <p>{price}</p>
+            <p className={style.infoText}>Price</p>
+            <p className={style.infoValue}>{price}</p>
           </div>
           <div className={style.highestBid}>
-            <p>Highest Bid</p>
-            <p>{highestBid}</p>
+            <p className={style.infoText}>Highest Bid</p>
+            <p className={style.infoValue}>{highestBid}</p>
           </div>
         </div>
       </div>
