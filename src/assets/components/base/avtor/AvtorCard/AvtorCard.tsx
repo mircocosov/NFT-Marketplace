@@ -6,15 +6,16 @@ import { Avtor } from "@/types/avtor"
 interface Props {
   className?: string
   total: string
+  number: string
   avtor: Avtor
 }
 
-export default function AvtorCard({ className, avtor, total }: Props) {
+export default function AvtorCard({ className, avtor, total, number }: Props) {
   return (
     <div className={cn(style.card, className)}>
       <div className={style.cardImage}>
         <div className={style.number}>
-          <p className={style.numberText}>{avtor.number}</p>
+          <p className={style.numberText}>{number}</p>
         </div>
         <Image src={avtor.src} alt={avtor.alt} className={style.image} />
       </div>
