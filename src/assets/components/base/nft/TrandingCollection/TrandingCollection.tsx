@@ -24,18 +24,18 @@ export default function TrandingCollection({
         <div className={style.mainNft}>
           <Image src={url[0]} alt={alt[0]} />
         </div>
-        <div>
+        <div className={style.moreNft}>
           <Image src={url[1]} alt={alt[1]} />
           <Image src={url[2]} alt={alt[2]} />
-          <div>
+          <div className={style.moreNftCount}>
             <p>{url.length - 3}</p>
           </div>
         </div>
-        <div>
-          <p>{title}</p>
-          <div>
+        <div className={style.info}>
+          <p className={style.title}>{title}</p>
+          <div className={style.avtor}>
             <Image src={avtor.src} alt={avtor.alt} />
-            <p>{avtor.nick}</p>
+            <p className={style.nick}>{avtor.nick}</p>
           </div>
         </div>
       </div>
