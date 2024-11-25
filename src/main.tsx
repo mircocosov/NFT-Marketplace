@@ -1,7 +1,7 @@
 import React from "react"
 import ReactDOM from "react-dom/client"
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
-import Header from "@/pages/Header"
+import Header from "@/pages/Header/Header"
 
 const router = createBrowserRouter([
   {

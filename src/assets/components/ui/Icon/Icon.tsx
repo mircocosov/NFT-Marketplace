@@ -25,7 +25,7 @@ import RocketIcon from "@/assets/icons/rocket.svg"
 import SwatchesIcon from "@/assets/icons/swatches.svg"
 import Twitter from "@/assets/icons/twitter.svg"
 import UserIcon from "@/assets/icons/user.svg"
-import VideoCameraIcon from "@/assets/icons/video.svg"
+import VideoCameraIcon from "@/assets/icons/video-camera.svg"
 import Wallet from "@/assets/icons/wallet.svg"
 import Youtube from "@/assets/icons/youtube.svg"
 
