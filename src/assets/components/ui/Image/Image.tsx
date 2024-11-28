@@ -1,5 +1,5 @@
 import style from "./Image.module.scss"
-import cn from "classnames"
+import classNames from "classnames"
 
 interface Props {
   className?: string
@@ -8,5 +8,7 @@ interface Props {
 }
 
 export default function Image({ className, src, alt }: Props) {
-  return <img src={src} alt={alt} className={cn(style.image, className)} />
+  return (
+    <img src={src} alt={alt} className={classNames(style.image, className)} />
+  )
 }

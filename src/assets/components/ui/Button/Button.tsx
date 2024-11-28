@@ -1,7 +1,7 @@
 import styles from "./Button.module.scss"
 import { ReactNode } from "react"
 import { Link } from "react-router-dom"
-import cn from "classnames"
+import classNames from "classnames"
 
 export interface ButtonProps {
   className?: string | null
@@ -16,13 +16,16 @@ export default function Button({
   link,
   children,
 }: ButtonProps) {
-  const classNames = cn(styles.button, styles[type], className)
-
   if (link) {
     return (
-      <Link to={link} className={classNames}>
+      <Link to={link} className={classNames(styles.button, type, className)}>
         {children}
       </Link>
     )
   }
+  return (
+    <button className={classNames(styles.button, type, className)}>
+      {children}
+    </button>
+  )
 }

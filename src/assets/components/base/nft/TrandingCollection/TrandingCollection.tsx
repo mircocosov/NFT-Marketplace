@@ -1,5 +1,5 @@
 import style from "./TrandingCollection.module.scss"
-import cn from "classnames"
+import classNames from "classnames"
 import Image from "@/assets/components/ui/Image"
 import { Avtor } from "@/types/avtor"
 
@@ -20,7 +20,7 @@ export default function TrandingCollection({
 }: Props) {
   if (url.length > 4) {
     return (
-      <div className={cn(style.card, className)}>
+      <div className={classNames(style.card, className)}>
         <div className={style.mainNft}>
           <Image src={url[0]} alt={alt[0]} />
         </div>
@@ -42,7 +42,7 @@ export default function TrandingCollection({
     )
   } else {
     return (
-      <div className={cn(style.card, className)}>
+      <div className={classNames(style.card, className)}>
         <div className={style.mainNft}>
           <Image src={url[0]} alt={alt[0]} />
         </div>

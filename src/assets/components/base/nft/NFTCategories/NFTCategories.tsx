@@ -1,5 +1,5 @@
 import style from "./NFTCategories.module.scss"
-import cn from "classnames"
+import classNames from "classnames"
 import Image from "@/assets/components/ui/Image"
 import Icon from "@/assets/components/ui/Icon"
 
@@ -27,7 +27,7 @@ export default function NFTCategories({
   icon,
 }: Props) {
   return (
-    <div className={cn(style.card, className)}>
+    <div className={classNames(style.card, className)}>
       <div>
         <Image src={url} alt={alt} className={style.image} />
         <Icon icon={icon} className={style.icon} />

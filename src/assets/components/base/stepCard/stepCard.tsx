@@ -1,6 +1,6 @@
 import style from "./stepCard.module.scss"
+import classNames from "classnames"
 import Icon from "@/assets/components/ui/Icon"
-import cn from "classnames"
 
 interface Props {
   className?: string
@@ -16,7 +16,7 @@ export default function StepCard({
   discription,
 }: Props) {
   return (
-    <div className={cn(style.card, className)}>
+    <div className={classNames(style.card, className)}>
       <Icon icon={icon} />
       <div className={style.info}>
         <h5>{title}</h5>

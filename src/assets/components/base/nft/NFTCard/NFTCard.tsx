@@ -1,5 +1,5 @@
 import style from "./NFTCard.module.scss"
-import cn from "classnames"
+import classNames from "classnames"
 import Image from "@/assets/components/ui/Image"
 import { NFT } from "@/types/nft"
 
@@ -10,7 +10,7 @@ interface Props {
 
 export default function NFTCard({ className, nft }: Props) {
   return (
-    <div className={cn(style.card, className)}>
+    <div className={classNames(style.card, className)}>
       <div className={style.cardImage}>
         <Image src={nft.src} alt={nft.alt} className={style.image} />
       </div>

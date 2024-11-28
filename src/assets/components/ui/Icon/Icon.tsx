@@ -1,33 +1,33 @@
 import styles from "./Icon.module.scss"
-import cn from "classnames"
+import classNames from "classnames"
 
-import Basket from "@/assets/icons/basket.svg"
-import BasketballIcon from "@/assets/icons/basketball.svg"
-import CameraIcon from "@/assets/icons/camera.svg"
-import Coinbase from "@/assets/icons/coinbase.svg"
-import Copy from "@/assets/icons/copy.svg"
-import Discord from "@/assets/icons/discord.svg"
-import Envelope from "@/assets/icons/envelope.svg"
-import Eye from "@/assets/icons/eye.svg"
-import Folder from "@/assets/icons/folder.svg"
-import Globe from "@/assets/icons/globe.svg"
-import Instagram from "@/assets/icons/instagram.svg"
-import LogoIcon from "@/assets/icons/logo.svg"
-import MagicStickIcon from "@/assets/icons/magic-stick.svg"
-import Menu from "@/assets/icons/menu.svg"
-import Metamask from "@/assets/icons/metamask.svg"
-import MusicNotesIcon from "@/assets/icons/music-notes.svg"
-import PaintBrushIcon from "@/assets/icons/paint-brush.svg"
-import Planet from "@/assets/icons/planet.svg"
-import Plus from "@/assets/icons/plus.svg"
-import Purse from "@/assets/icons/purse.svg"
-import RocketIcon from "@/assets/icons/rocket.svg"
-import SwatchesIcon from "@/assets/icons/swatches.svg"
-import Twitter from "@/assets/icons/twitter.svg"
-import UserIcon from "@/assets/icons/user.svg"
-import VideoCameraIcon from "@/assets/icons/video-camera.svg"
-import Wallet from "@/assets/icons/wallet.svg"
-import Youtube from "@/assets/icons/youtube.svg"
+import Basket from "@/assets/icons/basket.svg?react"
+import BasketballIcon from "@/assets/icons/basketball.svg?react"
+import CameraIcon from "@/assets/icons/camera.svg?react"
+import Coinbase from "@/assets/icons/coinbase.svg?react"
+import Copy from "@/assets/icons/copy.svg?react"
+import Discord from "@/assets/icons/discord.svg?react"
+import Envelope from "@/assets/icons/envelope.svg?react"
+import Eye from "@/assets/icons/eye.svg?react"
+import Folder from "@/assets/icons/folder.svg?react"
+import Globe from "@/assets/icons/globe.svg?react"
+import Instagram from "@/assets/icons/instagram.svg?react"
+import LogoIcon from "@/assets/icons/logo.svg?react"
+import MagicStickIcon from "@/assets/icons/magic-stick.svg?react"
+import Menu from "@/assets/icons/menu.svg?react"
+import Metamask from "@/assets/icons/metamask.svg?react"
+import MusicNotesIcon from "@/assets/icons/music-notes.svg?react"
+import PaintBrushIcon from "@/assets/icons/paint-brush.svg?react"
+import Planet from "@/assets/icons/planet.svg?react"
+import Plus from "@/assets/icons/plus.svg?react"
+import Purse from "@/assets/icons/purse.svg?react"
+import RocketIcon from "@/assets/icons/rocket.svg?react"
+import SwatchesIcon from "@/assets/icons/swatches.svg?react"
+import Twitter from "@/assets/icons/twitter.svg?react"
+import UserIcon from "@/assets/icons/user.svg?react"
+import VideoCameraIcon from "@/assets/icons/video-camera.svg?react"
+import Wallet from "@/assets/icons/wallet.svg?react"
+import Youtube from "@/assets/icons/youtube.svg?react"
 
 const ICONS = {
   basketball: {
@@ -122,7 +122,7 @@ export default function Icon({ icon, className }: Props) {
   const IconComponent = ICONS[icon].icon
 
   return (
-    <div className={cn("icon", styles.container, className)}>
+    <div className={classNames(styles.container, className)}>
       <IconComponent />
     </div>
   )
