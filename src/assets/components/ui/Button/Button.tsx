@@ -4,10 +4,10 @@ import { Link } from "react-router-dom"
 import classNames from "classnames"
 
 export interface ButtonProps {
-  className?: string | null
   type: "primary" | "secondary" | "text" | "outline"
   link?: string
   children?: ReactNode
+  className?: string | null
 }
 
 export default function Button({
@@ -18,13 +18,16 @@ export default function Button({
 }: ButtonProps) {
   if (link) {
     return (
-      <Link to={link} className={classNames(styles.button, type, className)}>
+      <Link
+        to={link}
+        className={classNames(styles.button, styles[type], className)}
+      >
         {children}
       </Link>
     )
   }
   return (
-    <button className={classNames(styles.button, type, className)}>
+    <button className={classNames(styles.button, styles[type], className)}>
       {children}
     </button>
   )

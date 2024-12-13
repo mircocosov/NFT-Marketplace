@@ -11,11 +11,12 @@
 
   &.primary {
     background-color: $purple;
-    color: $white;
     border: none;
     display: flex;
     flex-direction: row;
     gap: 12px;
+    padding: 20px 30px;
+    border-radius: 20px;
   }
 
   &.secondary {
