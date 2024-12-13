@@ -3,10 +3,19 @@
 .button {
   @include paragraph-2-b;
   color: $white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
 
   &.primary {
-    background: $purple;
+    background-color: $purple;
+    color: $white;
     border: none;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
   }
 
   &.secondary {
