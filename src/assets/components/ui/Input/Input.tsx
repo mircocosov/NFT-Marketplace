@@ -1,4 +1,4 @@
-import style from "./Input.module.scss"
+import styles from "./Input.module.scss"
 import classNames from "classnames"
 
 interface Props {
@@ -12,7 +12,7 @@ export default function Input({ className, placeholder, type, value }: Props) {
   return (
     <input
       type={type}
-      className={classNames(style.input, className)}
+      className={classNames(styles.input, className)}
       placeholder={placeholder}
       value={value}
     />

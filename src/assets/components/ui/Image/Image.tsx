@@ -1,4 +1,4 @@
-import style from "./Image.module.scss"
+import styles from "./Image.module.scss"
 import classNames from "classnames"
 
 interface Props {
@@ -9,6 +9,6 @@ interface Props {
 
 export default function Image({ className, src, alt }: Props) {
   return (
-    <img src={src} alt={alt} className={classNames(style.image, className)} />
+    <img src={src} alt={alt} className={classNames(styles.image, className)} />
   )
 }

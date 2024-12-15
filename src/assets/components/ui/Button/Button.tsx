@@ -7,7 +7,7 @@ export interface ButtonProps {
   type: "primary" | "secondary" | "text" | "outline"
   link?: string
   children?: ReactNode
-  className?: string | null
+  className?: string
 }
 
 export default function Button({
