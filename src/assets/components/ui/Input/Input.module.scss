@@ -1,0 +1,7 @@
+@import url("@/assets/css/config.scss");
+
+.input {
+  @include paragraph-1-a;
+  background: $white;
+  color: $grey-1;
+}

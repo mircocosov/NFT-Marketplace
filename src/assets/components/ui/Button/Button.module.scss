@@ -1,0 +1,35 @@
+@import "@/assets/css/config.scss";
+
+.button {
+  @include paragraph-2-a;
+  color: $white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+
+  &.primary {
+    background-color: $purple;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    border-radius: 20px;
+  }
+
+  &.secondary {
+    border: $purple 2px solid;
+    border-radius: $radius;
+  }
+
+  &.text {
+    border: none;
+    background: none;
+  }
+
+  &.outline {
+    background: $white;
+    color: $grey-1;
+  }
+}
