@@ -1,0 +1,50 @@
+@import "@/assets/css/config.scss";
+
+.getStartContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.getStartContainer__leftside {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 510px;
+}
+
+.getStartContainer__title {
+  @include heading-1-a;
+  color: $white;
+}
+
+.getStartContainer__discription {
+  @include paragraph-1-b;
+  color: $white;
+}
+
+.getStartContainer__statsContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.getStartContainer__stats {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.getStartContainer__header {
+  @include heading-2-a;
+  color: $white;
+  margin: 0;
+}
+
+.getStartContainer__text {
+  @include paragraph-3-a;
+  color: $white;
+  margin: 0;
+}
