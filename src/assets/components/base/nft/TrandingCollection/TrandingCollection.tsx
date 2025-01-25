@@ -1,9 +1,9 @@
-import style from "./TrandingCollection.module.scss"
 import classNames from "classnames"
 import Image from "@/assets/components/ui/Image"
 import { Avtor } from "@/types/avtor"
+import style from "./TrandingCollection.module.scss"
 
-interface Props {
+export interface NFTCollectionProps {
   className?: string
   url: Array<string>
   alt: Array<string>
@@ -17,16 +17,16 @@ export default function TrandingCollection({
   alt,
   title,
   avtor,
-}: Props) {
+}: NFTCollectionProps) {
   if (url.length > 4) {
     return (
       <div className={classNames(style.card, className)}>
         <div className={style.mainNft}>
-          <Image src={url[0]} alt={alt[0]} />
+          <Image className={style.nft} src={url[0]} alt={alt[0]} />
         </div>
         <div className={style.moreNft}>
-          <Image src={url[1]} alt={alt[1]} />
-          <Image src={url[2]} alt={alt[2]} />
+          <Image className={style.smallNft} src={url[1]} alt={alt[1]} />
+          <Image className={style.smallNft} src={url[2]} alt={alt[2]} />
           <div className={style.moreNftCount}>
             <p>{url.length - 3}</p>
           </div>

@@ -1,0 +1,18 @@
+@import "@/assets/css/config.scss";
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.mainNft {
+    max-width: 330px;
+    max-height: 330px;
+}
+
+.nft {
+    max-width: 330px;
+    max-height: 330px;
+    object-fit: cover;
+}
