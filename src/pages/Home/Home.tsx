@@ -4,7 +4,6 @@ import Icon from "@/assets/components/ui/Icon"
 import AvtorCard from "@/assets/components/base/avtor/AvtorCard"
 import NFTIntroCard from "@/assets/components/base/nft/NFTIntroCard"
 import TrandingCollection from "@/assets/components/base/nft/TrandingCollection/TrandingCollection"
-import { url } from "inspector"
 
 const NFTsrc = 'https://s3-alpha-sig.figma.com/img/8ac9/e0e3/bcf2d5507a81254146143702cd71f923?Expires=1738540800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=nZu4CtJfRoo-ognvLP~KZ4A-QXpyehRg6yhJLVUrd5oYOAHIB9okhgw7Rw8wNDhlmcL7XP8ZkGark3ITcMm82-XiGppFO60q-bMTUjmiiZLkFap10NPbf1hR7VD2iYkbP4Q6ZcBoK1pIcu3HmyMyojW0NRSDmySdH5Cnky4wZdM2zroCxlx4dUVl85gxzrDRunQwMzXdPLQdjxc-7Jet-PRRimoYnqBdHdbJzuIN7Nur~FvFiTNiTMVZ7H-LwaEmqJrG~hlXRhlAwHq7Y8f3wSP~MKijVwHQfq25jIISqZGEsBd2dxok6Uq8m96fwGA5QWeJrbH3KnSmBsHuQQJcng__'
 const Avtorsrc = 'https://s3-alpha-sig.figma.com/img/9113/13b2/d79c0afb936279fe8427b823bc6218b6?Expires=1738540800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=V4FamXFDZdQWFVqGijP0RkEFypdZoM38~2DuyC6LvKOR4OwfSSWixn2QW1tHkA~6UBY6lhK7SP9Ld5cI9FZ7Hs1i3nfD5eyRlsbSuY20Zb4sDa0-APG~xwfPQ2AVjAtBlOlTvym6aWNHHurwxLSymhPqmYXZAkAUQr7JNweVsB~mUgHXCENPxbaFBABv5ZPXaSrkVlObtRDs8leB2n2CYHEj24U3ZPPpfXFw3GdCnwo4LhwOQCRU75YV63XDgo7Voe3y-uGIlV-sShObCD~GMncOX5OFdQwQ9v3I8ub030vwAf6sd-w1tm5-dEji7cq4hB6z6LQfPB9ezvP3IYxqHg__'

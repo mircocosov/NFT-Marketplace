@@ -5,10 +5,13 @@ export interface ImageProps {
   className?: string
   src: string
   alt: string
+  rounded?: boolean
 }
 
-export default function Image({ className, src, alt }: ImageProps) {
+
+export default function Image({ className, src, alt, rounded = true}: ImageProps) {
+
   return (
-    <img src={src} alt={alt} className={classNames(styles.image, className)} />
+    <img src={src} alt={alt} className={classNames(styles.image, className, {[styles.rounded]: rounded}) } />
   )
 }

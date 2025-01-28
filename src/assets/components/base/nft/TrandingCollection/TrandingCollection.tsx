@@ -1,7 +1,7 @@
 import classNames from "classnames"
 import Image from "@/assets/components/ui/Image"
 import { Avtor } from "@/types/avtor"
-import style from "./TrandingCollection.module.scss"
+import styles from "./TrandingCollection.module.scss"
 
 export interface NFTCollectionProps {
   className?: string
@@ -20,42 +20,42 @@ export default function TrandingCollection({
 }: NFTCollectionProps) {
   if (url.length > 4) {
     return (
-      <div className={classNames(style.card, className)}>
-        <div className={style.mainNft}>
-          <Image className={style.nft} src={url[0]} alt={alt[0]} />
+      <div className={classNames(styles.card, className)}>
+        <div className={styles.mainNft}>
+          <Image src={url[0]} alt={url[0]} className={styles.nft}/>
         </div>
-        <div className={style.moreNft}>
-          <Image className={style.smallNft} src={url[1]} alt={alt[1]} />
-          <Image className={style.smallNft} src={url[2]} alt={alt[2]} />
-          <div className={style.moreNftCount}>
+        <div className={styles.moreNft}>
+          <Image className={styles.smallNft} src={url[1]} alt={alt[1]} />
+          <Image className={styles.smallNft} src={url[2]} alt={alt[2]} />
+          <div className={styles.moreNftCount}>
             <p>{url.length - 3}</p>
           </div>
         </div>
-        <div className={style.info}>
-          <p className={style.title}>{title}</p>
-          <div className={style.avtor}>
-            <Image src={avtor.src} alt={avtor.alt} />
-            <p className={style.nick}>{avtor.nick}</p>
+        <div className={styles.info}>
+          <p className={styles.title}>{title}</p>
+          <div className={styles.avtorInfo}>
+            <Image src={avtor.src} alt={avtor.alt} className={styles.avtor}/>
+            <p className={styles.nick}>{avtor.nick}</p>
           </div>
         </div>
       </div>
     )
   } else {
     return (
-      <div className={classNames(style.card, className)}>
-        <div className={style.mainNft}>
-          <Image src={url[0]} alt={alt[0]} />
+      <div className={classNames(styles.card, className)}>
+        <div className={styles.mainNft}>
+          <Image src={url[0]} alt={alt[0]} className={styles.nft} />
         </div>
-        <div>
-          <Image src={url[1]} alt={alt[1]} />
-          <Image src={url[2]} alt={alt[2]} />
-          <Image src={url[3]} alt={alt[3]} />
+        <div className={styles.moreNft}>
+          <Image src={url[1]} alt={alt[1]} className={styles.smallNft} />
+          <Image src={url[2]} alt={alt[2]} className={styles.smallNft} />
+          <Image src={url[3]} alt={alt[3]} className={styles.smallNft} />
         </div>
-        <div>
-          <p>{title}</p>
-          <div>
-            <Image src={avtor.src} alt={avtor.alt} />
-            <p>{avtor.nick}</p>
+        <div className={styles.info}>
+          <p className={styles.title}>{title}</p>
+          <div className={styles.avtorInfo}>
+            <Image src={avtor.src} alt={avtor.alt} className={styles.avtor}/>
+            <p className={styles.nick}>{avtor.nick}</p>
           </div>
         </div>
       </div>
