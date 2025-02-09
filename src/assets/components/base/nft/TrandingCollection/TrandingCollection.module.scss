@@ -1,18 +1,61 @@
 @import "@/assets/css/config.scss";
 
+* {
+  margin: 0;
+}
+
 .card {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .mainNft {
-    max-width: 330px;
-    max-height: 330px;
+  max-width: 330px;
+  max-height: 330px;
 }
 
-.nft {
-    max-width: 330px;
-    max-height: 330px;
-    object-fit: cover;
+.smallNfts {
+  display: flex;
+  flex-direction: row;
+  max-width: 330px;
+  max-height: 100px;
+  gap: 15px;
+}
+
+.smallNft {
+  max-width: 100px;
+  max-height: 100px;
+  object-fit: cover;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.title {
+  @include heading-5-a;
+  color: $white;
+}
+
+.avtor {
+  height: 24px;
+  object-fit: cover;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+}
+
+.creater {
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+}
+
+.nick {
+  @include paragraph-4-a;
+  color: $white;
 }

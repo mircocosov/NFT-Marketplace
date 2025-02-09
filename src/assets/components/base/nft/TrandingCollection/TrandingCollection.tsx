@@ -24,7 +24,7 @@ export default function TrandingCollection({
         <div className={style.mainNft}>
           <Image className={style.nft} src={url[0]} alt={alt[0]} />
         </div>
-        <div className={style.moreNft}>
+        <div className={style.smallNfts}>
           <Image className={style.smallNft} src={url[1]} alt={alt[1]} />
           <Image className={style.smallNft} src={url[2]} alt={alt[2]} />
           <div className={style.moreNftCount}>
@@ -34,7 +34,7 @@ export default function TrandingCollection({
         <div className={style.info}>
           <p className={style.title}>{title}</p>
           <div className={style.avtor}>
-            <Image src={avtor.src} alt={avtor.alt} />
+            <Image src={avtor.src} alt={avtor.alt} className={style.creater} />
             <p className={style.nick}>{avtor.nick}</p>
           </div>
         </div>
@@ -46,16 +46,16 @@ export default function TrandingCollection({
         <div className={style.mainNft}>
           <Image src={url[0]} alt={alt[0]} />
         </div>
-        <div>
-          <Image src={url[1]} alt={alt[1]} />
-          <Image src={url[2]} alt={alt[2]} />
-          <Image src={url[3]} alt={alt[3]} />
+        <div className={style.smallNfts}>
+          <Image src={url[1]} alt={alt[1]} className={style.smallNft} />
+          <Image src={url[2]} alt={alt[2]} className={style.smallNft} />
+          <Image src={url[3]} alt={alt[3]} className={style.smallNft} />
         </div>
-        <div>
-          <p>{title}</p>
-          <div>
-            <Image src={avtor.src} alt={avtor.alt} />
-            <p>{avtor.nick}</p>
+        <div className={style.info}>
+          <p className={style.title}>{title}</p>
+          <div className={style.avtor}>
+            <Image src={avtor.src} alt={avtor.alt} className={style.creater} />
+            <p className={style.nick}>{avtor.nick}</p>
           </div>
         </div>
       </div>

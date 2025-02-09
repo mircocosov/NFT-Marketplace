@@ -48,3 +48,9 @@
   color: $white;
   margin: 0;
 }
+
+.collectionContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
