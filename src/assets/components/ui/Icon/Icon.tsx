@@ -1,33 +1,46 @@
 import styles from "./Icon.module.scss"
 import classNames from "classnames"
+import { lazy } from "react"
 
-import Basket from "@/assets/icons/basket.svg?react"
-import BasketballIcon from "@/assets/icons/basketball.svg?react"
-import CameraIcon from "@/assets/icons/camera.svg?react"
-import Coinbase from "@/assets/icons/coinbase.svg?react"
-import Copy from "@/assets/icons/copy.svg?react"
-import Discord from "@/assets/icons/discord.svg?react"
-import Envelope from "@/assets/icons/envelope.svg?react"
-import Eye from "@/assets/icons/eye.svg?react"
-import Folder from "@/assets/icons/folder.svg?react"
-import Globe from "@/assets/icons/globe.svg?react"
-import Instagram from "@/assets/icons/instagram.svg?react"
-import LogoIcon from "@/assets/icons/logo.svg?react"
-import MagicStickIcon from "@/assets/icons/magic-stick.svg?react"
-import Menu from "@/assets/icons/menu.svg?react"
-import Metamask from "@/assets/icons/metamask.svg?react"
-import MusicNotesIcon from "@/assets/icons/music-notes.svg?react"
-import PaintBrushIcon from "@/assets/icons/paint-brush.svg?react"
-import Planet from "@/assets/icons/planet.svg?react"
-import Plus from "@/assets/icons/plus.svg?react"
-import Purse from "@/assets/icons/purse.svg?react"
-import RocketIcon from "@/assets/icons/rocket.svg?react"
-import SwatchesIcon from "@/assets/icons/swatches.svg?react"
-import Twitter from "@/assets/icons/twitter.svg?react"
-import UserIcon from "@/assets/icons/user.svg?react"
-import VideoCameraIcon from "@/assets/icons/video-camera.svg?react"
-import Wallet from "@/assets/icons/wallet.svg?react"
-import Youtube from "@/assets/icons/youtube.svg?react"
+const BasketballIcon = lazy(
+  () => import("@/assets/components/ui/Icon/Basketball.svg?react"),
+)
+const Basket = lazy(
+  () => import("@/assets/components/ui/Icon/Basket.svg?react"),
+)
+const CameraIcon = lazy(() => import("@/assets/icons/camera.svg?react"))
+const Coinbase = lazy(() => import("@/assets/icons/coinbase.svg?react"))
+const Copy = lazy(() => import("@/assets/icons/copy.svg?react"))
+const Discord = lazy(() => import("@/assets/icons/discord.svg?react"))
+const Envelope = lazy(() => import("@/assets/icons/envelope.svg?react"))
+const Eye = lazy(() => import("@/assets/icons/eye.svg?react"))
+const Folder = lazy(() => import("@/assets/icons/folder.svg?react"))
+const Globe = lazy(() => import("@/assets/icons/globe.svg?react"))
+const Instagram = lazy(() => import("@/assets/icons/instagram.svg?react"))
+const LogoIcon = lazy(() => import("@/assets/icons/logo.svg?react"))
+const MagicStickIcon = lazy(
+  () => import("@/assets/icons/magic-stick.svg?react"),
+)
+const Menu = lazy(() => import("@/assets/icons/menu.svg?react"))
+const Metamask = lazy(() => import("@/assets/icons/metamask.svg?react"))
+const MusicNotesIcon = lazy(
+  () => import("@/assets/icons/music-notes.svg?react"),
+)
+const PaintBrushIcon = lazy(
+  () => import("@/assets/icons/paint-brush.svg?react"),
+)
+const Planet = lazy(() => import("@/assets/icons/planet.svg?react"))
+const Plus = lazy(() => import("@/assets/icons/plus.svg?react"))
+const Purse = lazy(() => import("@/assets/icons/purse.svg?react"))
+const RocketIcon = lazy(() => import("@/assets/icons/rocket.svg?react"))
+const SwatchesIcon = lazy(() => import("@/assets/icons/swatches.svg?react"))
+const Twitter = lazy(() => import("@/assets/icons/twitter.svg?react"))
+const UserIcon = lazy(() => import("@/assets/icons/user.svg?react"))
+const VideoCameraIcon = lazy(
+  () => import("@/assets/icons/video-camera.svg?react"),
+)
+const Wallet = lazy(() => import("@/assets/icons/wallet.svg?react"))
+const Youtube = lazy(() => import("@/assets/icons/youtube.svg?react"))
 
 const ICONS = {
   basketball: {
