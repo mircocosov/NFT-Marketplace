@@ -2,12 +2,8 @@ import styles from "./Icon.module.scss"
 import classNames from "classnames"
 import { lazy } from "react"
 
-const BasketballIcon = lazy(
-  () => import("@/assets/components/ui/Icon/Basketball.svg?react"),
-)
-const Basket = lazy(
-  () => import("@/assets/components/ui/Icon/Basket.svg?react"),
-)
+const BasketballIcon = lazy(() => import("@/assets/icons/basket.svg?react"))
+const Basket = lazy(() => import("@/assets/icons/Basket.svg?react"))
 const CameraIcon = lazy(() => import("@/assets/icons/camera.svg?react"))
 const Coinbase = lazy(() => import("@/assets/icons/coinbase.svg?react"))
 const Copy = lazy(() => import("@/assets/icons/copy.svg?react"))
