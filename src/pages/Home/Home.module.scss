@@ -40,6 +40,11 @@
   color: $white;
 }
 
+.getStartContainer__Button {
+  padding: 19px 50px;
+  max-width: 224px;
+}
+
 .getStartContainer__statsContainer {
   display: flex;
   flex-direction: row;
@@ -98,4 +103,36 @@
 
 .avtorCard {
   width: calc(100% / 4 - 30px * 3 / 4);
+}
+
+.topCreators {
+  display: flex;
+  flex-direction: column;
+}
+
+.topCreators__text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.topCreators__title {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.topCreators__header {
+  color: $white;
+  @include heading-3-a;
+}
+
+.topCreators__discription {
+  color: $white;
+  @include paragraph-1-a;
+}
+
+.topCreatorsButton {
+  padding: 19px 50px;
+  gap: 12px;
 }

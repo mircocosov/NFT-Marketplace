@@ -25,7 +25,7 @@ export default function Home() {
               sell art from more than 20k NFT artists.
             </p>
 
-            <Button type="primary">
+            <Button type="primary" className={styles.getStartContainer__Button}>
               <Icon icon="rocket" />
               <p className={styles.getStartContainer__button}>Get Started</p>
             </Button>
@@ -99,16 +99,28 @@ export default function Home() {
         </div>
 
         <div className={styles.topCreators}>
-          <AvtorCard
-            avtor={{
-              src: Avtorsrc,
-              alt: "avtor",
-              nick: "Keepitreal",
-            }}
-            total={"34.5 ETH"}
-            number={"1"}
-            className={styles.avtorCard}
-          />
+          <div className={styles.topCreators__text}>
+            <div className={styles.topCreators__title}>
+              <h3 className={styles.topCreators__header}>Top Creators</h3>
+              <p className={styles.topCreators__discription}>Checkout Top Rated Creators on the NFT Marketplace</p>
+            </div>
+            <Button type="secondary" link="./ranking" className={styles.topCreatorsButton}>
+              <Icon icon="rocket" className={styles.topCreatorsIcon} svgColor="purple"/>
+              <p>View Rankings</p>
+            </Button>
+          </div>
+          <div className={styles.arrayCreators}>
+            <AvtorCard
+              avtor={{
+                src: Avtorsrc,
+                alt: "avtor",
+                nick: "Keepitreal",
+              }}
+              total={"34.5 ETH"}
+              number={"1"}
+              className={styles.avtorCard}
+            />
+          </div>
         </div>
       </div>
     </main>
