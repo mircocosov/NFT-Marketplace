@@ -1,5 +1,5 @@
 import classNames from "classnames"
-import Image from "@/assets/components/ui/Image"
+import Image from "@/components/ui/Image"
 import { Avtor } from "@/types/avtor"
 import styles from "./TrandingCollection.module.scss"
 

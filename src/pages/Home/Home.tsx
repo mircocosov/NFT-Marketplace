@@ -1,9 +1,9 @@
 import styles from "./Home.module.scss"
-import Button from "@/assets/components/ui/Button/Button"
-import Icon from "@/assets/components/ui/Icon"
-import AvtorCard from "@/assets/components/base/avtor/AvtorCard"
-import NFTIntroCard from "@/assets/components/base/nft/NFTIntroCard"
-import TrandingCollection from "@/assets/components/base/nft/TrandingCollection/TrandingCollection"
+import Button from "@/components/ui/Button"
+import Icon from "@/components/ui/Icon"
+import AvtorCard from "@/components/base/avtor/AvtorCard"
+import NFTIntroCard from "@/components/base/nft/NFTIntroCard"
+import TrandingCollection from "@/components/base/nft/TrandingCollection/TrandingCollection"
 
 const NFTsrc =
   "https://s3-alpha-sig.figma.com/img/a792/ddc0/c4e1193ffd08cf4918e6f696bbc8d8fe?Expires=1739750400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=tA1MLhV-UJYKMcVqezEZAD2BVQ6crHEbpi4xywyP~BBOuOZs-d1abWt5um2B~Or-u6paiDC2xJkAWJXdULy4jQO2hW3xo-j7hH1~BErQVVzcX5AP0OpmjtEK8uK2rIaISy80bu0cBbz-9ghby0MfBnsHPh~ZFDLyI04fXyBne996ISfwdkzElG~OxpQj686Kk2oXEbKcRKNDIcanDXz48Ewyq212~jfvK5ONQ0ysfuJIystfc54jispSsG3pkhCLRq-9xfGYPGTAncP6xmvpZLcUjqKlfhL79p1-n8f0X2sPA9c9iF~7RzgVMeTDAtekVfwNRTIzwgdhB~hPsJE3ww__"
@@ -13,79 +13,103 @@ const Avtorsrc =
 export default function Home() {
   return (
     <main className={styles.main}>
-      <div className={styles.getStartContainer}>
-        <div className={styles.getStartContainer__leftside}>
-          <h1 className={styles.getStartContainer__title}>
-            Discover Digital Art & Collect NFTs
-          </h1>
+      <div className={styles.content}>
+        <div className={styles.getStartContainer}>
+          <div className={styles.getStartContainer__leftside}>
+            <h1 className={styles.getStartContainer__title}>
+              Discover Digital Art & Collect NFTs
+            </h1>
 
-          <p className={styles.getStartContainer__discription}>
-            NFT marketplace UI created with Anima for Figma. Collect, buy and
-            sell art from more than 20k NFT artists.
-          </p>
+            <p className={styles.getStartContainer__discription}>
+              NFT marketplace UI created with Anima for Figma. Collect, buy and
+              sell art from more than 20k NFT artists.
+            </p>
 
-          <Button type="primary">
-            <Icon icon="rocket" />
-            <p className={styles.getStartContainer__button}>Get Started</p>
-          </Button>
+            <Button type="primary">
+              <Icon icon="rocket" />
+              <p className={styles.getStartContainer__button}>Get Started</p>
+            </Button>
 
-          <div className={styles.getStartContainer__statsContainer}>
-            <div className={styles.getStartContainer__stats}>
-              <h4 className={styles.getStartContainer__header}>240k+</h4>
-              <p className={styles.getStartContainer__text}>Total Sale</p>
-            </div>
+            <div className={styles.getStartContainer__statsContainer}>
+              <div className={styles.getStartContainer__stats}>
+                <h4 className={styles.getStartContainer__header}>240k+</h4>
+                <p className={styles.getStartContainer__text}>Total Sale</p>
+              </div>
 
-            <div className={styles.getStartContainer__stats}>
-              <h4 className={styles.getStartContainer__header}>100k+</h4>
-              <p className={styles.getStartContainer__text}>Auctions</p>
-            </div>
+              <div className={styles.getStartContainer__stats}>
+                <h4 className={styles.getStartContainer__header}>100k+</h4>
+                <p className={styles.getStartContainer__text}>Auctions</p>
+              </div>
 
-            <div className={styles.getStartContainer__stats}>
-              <h4 className={styles.getStartContainer__header}>240k+</h4>
-              <p className={styles.getStartContainer__text}>Artists</p>
+              <div className={styles.getStartContainer__stats}>
+                <h4 className={styles.getStartContainer__header}>240k+</h4>
+                <p className={styles.getStartContainer__text}>Artists</p>
+              </div>
             </div>
           </div>
+          <div className={styles.getStartContainer__rightside}>
+            <NFTIntroCard
+              nft={{
+                src: NFTsrc,
+                alt: "nft",
+                title: "Space Walking",
+                avtorSrc: Avtorsrc,
+                avtorAlt: "avtor",
+                avtor: "Animakid",
+                price: "20",
+                highestBid: "20",
+              }}
+              className={styles.NFTIntroCard}
+            />
+          </div>
         </div>
-        <NFTIntroCard
-          nft={{
-            src: NFTsrc,
-            alt: "nft",
-            title: "Space Walking",
-            avtorSrc: Avtorsrc,
-            avtorAlt: "avtor",
-            avtor: "Animakid",
-            price: "20",
-            highestBid: "20",
-          }}
-        />
-      </div>
-      <div className={styles.collectionContainer}>
-        <p className={styles.collectionContainer__title}>Trending Collection</p>
-        <p className={styles.collectionContainer__discription}>
-          Checkout our weekly updated trending collection.
-        </p>
-        <div className={styles.cardsCollections}>
-          <TrandingCollection
-            {...{
-              url: [NFTsrc, NFTsrc, NFTsrc, NFTsrc],
-              alt: ["NFT", "NFT", "NFT"],
-              title: "DSGN Animals",
-              avtor: { src: Avtorsrc, alt: "avtor", nick: "MrFox" },
-            }}
-          ></TrandingCollection>
+        <div className={styles.collectionContainer}>
+          <p className={styles.collectionContainer__title}>
+            Trending Collection
+          </p>
+          <p className={styles.collectionContainer__discription}>
+            Checkout our weekly updated trending collection.
+          </p>
+          <div className={styles.cardsCollections}>
+            <TrandingCollection
+              {...{
+                url: [NFTsrc, NFTsrc, NFTsrc, NFTsrc],
+                alt: ["NFT", "NFT", "NFT"],
+                title: "DSGN Animals",
+                avtor: { src: Avtorsrc, alt: "avtor", nick: "MrFox" },
+              }}
+            ></TrandingCollection>
+            <TrandingCollection
+              {...{
+                url: [NFTsrc, NFTsrc, NFTsrc, NFTsrc],
+                alt: ["NFT", "NFT", "NFT"],
+                title: "DSGN Animals",
+                avtor: { src: Avtorsrc, alt: "avtor", nick: "MrFox" },
+              }}
+            ></TrandingCollection>
+            <TrandingCollection
+              {...{
+                url: [NFTsrc, NFTsrc, NFTsrc, NFTsrc],
+                alt: ["NFT", "NFT", "NFT"],
+                title: "DSGN Animals",
+                avtor: { src: Avtorsrc, alt: "avtor", nick: "MrFox" },
+              }}
+            ></TrandingCollection>
+          </div>
         </div>
-      </div>
 
-      <div className={styles.getStartContainer__rightside}>
-        <AvtorCard
-          avtor={{
-            src: Avtorsrc,
-            alt: "avtor",
-            nick: "Keepitreal",
-          }}
-          total={"34.5 ETH"}
-          number={"1"}
-        />
+        <div className={styles.topCreators}>
+          <AvtorCard
+            avtor={{
+              src: Avtorsrc,
+              alt: "avtor",
+              nick: "Keepitreal",
+            }}
+            total={"34.5 ETH"}
+            number={"1"}
+            className={styles.avtorCard}
+          />
+        </div>
       </div>
     </main>
   )

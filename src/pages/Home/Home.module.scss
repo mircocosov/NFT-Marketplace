@@ -1,5 +1,20 @@
 @import "@/assets/css/config.scss";
 
+.main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  max-width: 1050px;
+  margin: 0 64px;
+  width: 100%;
+  gap: 160px;
+}
+
 .getStartContainer {
   display: flex;
   flex-direction: row;
@@ -12,7 +27,7 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  max-width: 510px;
+  max-width: 50%;
 }
 
 .getStartContainer__title {
@@ -21,7 +36,7 @@
 }
 
 .getStartContainer__discription {
-  @include paragraph-1-b;
+  @include paragraph-1-a;
   color: $white;
 }
 
@@ -49,8 +64,38 @@
   margin: 0;
 }
 
+.getStartContainer__rightside {
+  width: 50%;
+}
+
 .collectionContainer {
   display: flex;
   flex-direction: column;
   gap: 15px;
+}
+
+.collectionContainer__title {
+  @include heading-3-a;
+  color: $white;
+}
+
+.collectionContainer__discription {
+  @include paragraph-1-a;
+  color: $white;
+}
+
+.cardsCollections {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.topCreators {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.avtorCard {
+  width: calc(100% / 4 - 30px * 3 / 4);
 }

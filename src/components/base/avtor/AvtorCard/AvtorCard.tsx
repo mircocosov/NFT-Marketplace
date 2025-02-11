@@ -1,6 +1,6 @@
 import style from "./AvtorCard.module.scss"
 import classNames from "classnames"
-import Image from "@/assets/components/ui/Image"
+import Image from "@/components/ui/Image"
 import { Avtor } from "@/types/avtor"
 
 interface Props {
@@ -17,7 +17,12 @@ export default function AvtorCard({ className, avtor, total, number }: Props) {
         <div className={style.number}>
           <p className={style.numberText}>{number}</p>
         </div>
-        <Image src={avtor.src} alt={avtor.alt} className={style.image} />
+        <Image
+          src={avtor.src}
+          alt={avtor.alt}
+          className={style.avtorCard__image}
+          rounded={false}
+        />
       </div>
       <div className={style.avtorInfo}>
         <h5 className={style.nick}>{avtor.nick}</h5>

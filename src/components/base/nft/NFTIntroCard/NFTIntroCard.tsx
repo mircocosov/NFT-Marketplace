@@ -1,6 +1,6 @@
 import classNames from "classnames"
 import style from "./NFTIntroCard.module.scss"
-import Image from "@/assets/components/ui/Image"
+import Image from "@/components/ui/Image"
 import { NFT } from "@/types/nft"
 
 interface Props {
