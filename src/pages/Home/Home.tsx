@@ -5,6 +5,7 @@ import AvtorCard from "@/components/base/avtor/AvtorCard"
 import NFTIntroCard from "@/components/base/nft/NFTIntroCard"
 import TrandingCollection from "@/components/base/nft/TrandingCollection/TrandingCollection"
 import NFTCategories from "@/components/base/nft/NFTCategories"
+import NFTCard from "@/components/base/nft/NFTCard"
 
 const NFTsrc =
   "https://s3-alpha-sig.figma.com/img/a792/ddc0/c4e1193ffd08cf4918e6f696bbc8d8fe?Expires=1739750400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=tA1MLhV-UJYKMcVqezEZAD2BVQ6crHEbpi4xywyP~BBOuOZs-d1abWt5um2B~Or-u6paiDC2xJkAWJXdULy4jQO2hW3xo-j7hH1~BErQVVzcX5AP0OpmjtEK8uK2rIaISy80bu0cBbz-9ghby0MfBnsHPh~ZFDLyI04fXyBne996ISfwdkzElG~OxpQj686Kk2oXEbKcRKNDIcanDXz48Ewyq212~jfvK5ONQ0ysfuJIystfc54jispSsG3pkhCLRq-9xfGYPGTAncP6xmvpZLcUjqKlfhL79p1-n8f0X2sPA9c9iF~7RzgVMeTDAtekVfwNRTIzwgdhB~hPsJE3ww__"
@@ -143,6 +144,33 @@ export default function Home() {
               title="Art"
               icon="paintBrush"
             ></NFTCategories>
+          </div>
+        </div>
+        <div className={styles.discoverNFTs}>
+          <div className={styles.discoverNFTs__header}>
+            <div className={styles.discoverNFTs__text}>
+              <h3 className={styles.discoverNFTs__title}>Discover More NFTs</h3>
+              <p className={styles.discoverNFTs__discription}>Explore new trending NFTs</p>
+            </div>
+            <Button type="secondary" link="/marketplace" className={styles.discoverNFTs__button}>
+              <Icon icon="eye" svgColor="purple" />
+              <p>See All</p>
+            </Button>
+          </div>
+          <div className={styles.discoverNFTs__NFTCards}>
+            <NFTCard 
+              className={styles.NFTCard}
+              nft={{
+                src: NFTsrc,
+                alt: "alt",
+                title: "Distant Galaxy",
+                avtor: "MoonDancer",
+                avtorSrc: Avtorsrc,
+                avtorAlt: "avtor",
+                price: "1.63 ETH",
+                highestBid: "0.33 wETH"
+              }}
+            />
           </div>
         </div>
       </div>

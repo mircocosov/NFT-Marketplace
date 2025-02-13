@@ -1,4 +1,77 @@
-@import url("@/assets/css/config.scss");
+@import "@/assets/css/config.scss";
 
 .card {
+    display: flex;
+    flex-direction: column;
+    border-radius: $radius;
+    background: $grey-2;
+}
+
+.image {
+    width: 100%;
+    max-height: 296px;
+    object-fit: cover;
+    border-radius: $radius $radius 0 0;
+}
+
+.cardInfo {
+    display: flex;
+    padding: 20px 30px;
+    gap: 25px;
+    flex-direction: column;
+}
+
+.artistInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.title {
+    @include heading-5-a;
+    color: $white;
+}
+
+.avtorInfo {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+.avtroInfo__image {
+    max-width: 24px;
+    max-height: 24px;
+    object-fit: cover;
+}
+
+.avtor {
+    @include paragraph-1-b;
+    color: $white;
+}
+
+.priceInfo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price {
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+}
+
+.infoText {
+    color: $grey-3;
+    @include paragraph-2-b;
+}
+
+.infoValue {
+    @include paragraph-1-b;
+    color: $white;
+}
+
+.highestBid {
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
 }

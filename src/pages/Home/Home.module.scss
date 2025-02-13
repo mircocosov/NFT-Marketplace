@@ -158,3 +158,47 @@
 .categoriesCard {
   width: calc(100% / 4 - 30px * 3 / 4);
 }
+
+.discoverNFTs {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.discoverNFTs__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.discoverNFTs__text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.discoverNFTs__title {
+  @include heading-3-a;
+  color: $white;
+}
+
+.discoverNFTs__discription {
+  @include paragraph-1-a;
+  color: $white;
+}
+
+.discoverNFTs__button {
+  padding: 19px 50px;
+  gap: 12px;
+}
+
+.discoverNFTs__NFTCards {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  width: 100%;
+}
+
+.NFTCard {
+  width: calc(100% / 3 - 30px * 2 / 3);
+}
