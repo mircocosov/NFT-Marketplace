@@ -3,7 +3,7 @@
 .card {
   display: flex;
   flex-direction: column;
-  border-radius: 20px;
+  border-radius: $radius;
   background: $grey-2;
 }
 

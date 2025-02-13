@@ -4,6 +4,7 @@ import Icon from "@/components/ui/Icon"
 import AvtorCard from "@/components/base/avtor/AvtorCard"
 import NFTIntroCard from "@/components/base/nft/NFTIntroCard"
 import TrandingCollection from "@/components/base/nft/TrandingCollection/TrandingCollection"
+import NFTCategories from "@/components/base/nft/NFTCategories"
 
 const NFTsrc =
   "https://s3-alpha-sig.figma.com/img/a792/ddc0/c4e1193ffd08cf4918e6f696bbc8d8fe?Expires=1739750400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=tA1MLhV-UJYKMcVqezEZAD2BVQ6crHEbpi4xywyP~BBOuOZs-d1abWt5um2B~Or-u6paiDC2xJkAWJXdULy4jQO2hW3xo-j7hH1~BErQVVzcX5AP0OpmjtEK8uK2rIaISy80bu0cBbz-9ghby0MfBnsHPh~ZFDLyI04fXyBne996ISfwdkzElG~OxpQj686Kk2oXEbKcRKNDIcanDXz48Ewyq212~jfvK5ONQ0ysfuJIystfc54jispSsG3pkhCLRq-9xfGYPGTAncP6xmvpZLcUjqKlfhL79p1-n8f0X2sPA9c9iF~7RzgVMeTDAtekVfwNRTIzwgdhB~hPsJE3ww__"
@@ -102,10 +103,20 @@ export default function Home() {
           <div className={styles.topCreators__text}>
             <div className={styles.topCreators__title}>
               <h3 className={styles.topCreators__header}>Top Creators</h3>
-              <p className={styles.topCreators__discription}>Checkout Top Rated Creators on the NFT Marketplace</p>
+              <p className={styles.topCreators__discription}>
+                Checkout Top Rated Creators on the NFT Marketplace
+              </p>
             </div>
-            <Button type="secondary" link="./ranking" className={styles.topCreatorsButton}>
-              <Icon icon="rocket" className={styles.topCreatorsIcon} svgColor="purple"/>
+            <Button
+              type="secondary"
+              link="./ranking"
+              className={styles.topCreatorsButton}
+            >
+              <Icon
+                icon="rocket"
+                className={styles.topCreatorsIcon}
+                svgColor="purple"
+              />
               <p>View Rankings</p>
             </Button>
           </div>
@@ -120,6 +131,18 @@ export default function Home() {
               number={"1"}
               className={styles.avtorCard}
             />
+          </div>
+        </div>
+        <div className={styles.categories}>
+          <h3 className={styles.categoriesTitle}>Browse Categories</h3>
+          <div className={styles.categories__card}>
+            <NFTCategories
+              className={styles.categoriesCard}
+              url={NFTsrc}
+              alt="alt"
+              title="Art"
+              icon="paintBrush"
+            ></NFTCategories>
           </div>
         </div>
       </div>

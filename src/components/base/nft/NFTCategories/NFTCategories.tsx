@@ -1,7 +1,7 @@
-import style from "./NFTCategories.module.scss"
+import style from "./NFTCaregories.module.scss"
 import classNames from "classnames"
-import Image from "@/assets/components/ui/Image"
-import Icon from "@/assets/components/ui/Icon"
+import Image from "@/components/ui/Image"
+import Icon from "@/components/ui/Icon"
 
 interface Props {
   className?: string
@@ -28,12 +28,17 @@ export default function NFTCategories({
 }: Props) {
   return (
     <div className={classNames(style.card, className)}>
-      <div>
-        <Image src={url} alt={alt} className={style.image} />
-        <Icon icon={icon} className={style.icon} />
+      <div className={style.image__con}>
+        <Image
+          src={url}
+          alt={alt}
+          className={style.card__image}
+          rounded={false}
+        />
+        <Icon icon={icon} className={style.icon} svgColor="none" />
       </div>
-      <div>
-        <p>{title}</p>
+      <div className={style.card__title}>
+        <p className={style.title}>{title}</p>
       </div>
     </div>
   )

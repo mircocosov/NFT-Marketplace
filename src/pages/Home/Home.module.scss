@@ -136,3 +136,25 @@
   padding: 19px 50px;
   gap: 12px;
 }
+
+.categories {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.categoriesTitle {
+  @include heading-3-a;
+  color: $white;
+}
+
+.categories__card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.categoriesCard {
+  width: calc(100% / 4 - 30px * 3 / 4);
+}

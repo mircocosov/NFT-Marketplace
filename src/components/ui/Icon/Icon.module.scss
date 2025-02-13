@@ -2,7 +2,6 @@
 
 .container {
   display: flex;
-
 }
 
 .white > path {
@@ -11,4 +10,8 @@
 
 .purple > path {
   fill: $purple;
+}
+
+.none > path {
+  fill: none;
 }
