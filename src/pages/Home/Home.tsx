@@ -150,15 +150,21 @@ export default function Home() {
           <div className={styles.discoverNFTs__header}>
             <div className={styles.discoverNFTs__text}>
               <h3 className={styles.discoverNFTs__title}>Discover More NFTs</h3>
-              <p className={styles.discoverNFTs__discription}>Explore new trending NFTs</p>
+              <p className={styles.discoverNFTs__discription}>
+                Explore new trending NFTs
+              </p>
             </div>
-            <Button type="secondary" link="/marketplace" className={styles.discoverNFTs__button}>
+            <Button
+              type="secondary"
+              link="/marketplace"
+              className={styles.discoverNFTs__button}
+            >
               <Icon icon="eye" svgColor="purple" />
               <p>See All</p>
             </Button>
           </div>
           <div className={styles.discoverNFTs__NFTCards}>
-            <NFTCard 
+            <NFTCard
               className={styles.NFTCard}
               nft={{
                 src: NFTsrc,
@@ -168,7 +174,7 @@ export default function Home() {
                 avtorSrc: Avtorsrc,
                 avtorAlt: "avtor",
                 price: "1.63 ETH",
-                highestBid: "0.33 wETH"
+                highestBid: "0.33 wETH",
               }}
             />
           </div>
