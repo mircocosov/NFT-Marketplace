@@ -202,3 +202,9 @@
 .NFTCard {
   width: calc(100% / 3 - 30px * 2 / 3);
 }
+
+.howWorkCon {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}

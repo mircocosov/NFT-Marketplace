@@ -181,7 +181,22 @@ export default function Home() {
           </div>
         </div>
         <div className={styles.howWorkCon}>
-          <HowWork className={styles.howWork} icon="purse"></HowWork>
+          <HowWork
+            className={styles.howWork}
+            icon="purse"
+            title="Setup Your wallet"
+            discription="Set up your wallet of choice. Connect it to the NFT market by clicking the wallet icon in the top right corner."
+          />
+          <HowWork
+            icon="folder"
+            title="Create Collection"
+            discription="Upload your work and setup your collection. Add a description, social links and floor price."
+          />
+          <HowWork
+            icon="basket"
+            title="Start Earning"
+            discription="Choose between auctions and fixed-price listings. Start earning by selling your NFTs or trading others."
+          />
         </div>
       </div>
     </main>

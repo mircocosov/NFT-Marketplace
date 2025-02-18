@@ -3,4 +3,31 @@
 .card {
   display: flex;
   flex-direction: column;
+  background: $grey-2;
+  border-radius: $radius;
+  align-items: center;
+  padding: 10px 30px 30px 30px;
+}
+
+.discription {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  @include heading-5-a;
+  color: $white;
+  margin: 0;
+}
+
+.text {
+  @include paragraph-4-a;
+  color: $white;
+  margin: 0;
+  text-wrap: pretty;
+  text-align: center;
+  max-width: 270px;
 }
