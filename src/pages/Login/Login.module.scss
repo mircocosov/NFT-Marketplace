@@ -1,0 +1,58 @@
+@import "@/assets/css/config.scss";
+
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+}
+
+.leftside {
+  width: 50%;
+  object-fit: cover;
+}
+
+.image {
+  border-radius: 0;
+}
+
+.form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.texts {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.title {
+  @include heading-2-a;
+  color: $white;
+  margin: 0;
+}
+
+.discription {
+  @include paragraph-1-a;
+  color: $white;
+  margin: 0;
+}
+
+.loginContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.buuton {
+  @include paragraph-2-a;
+  color: $white;
+}

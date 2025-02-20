@@ -8,10 +8,8 @@ import NFTCategories from "@/components/base/nft/NFTCategories"
 import NFTCard from "@/components/base/nft/NFTCard"
 import HowWork from "@/components/base/howWork/howWork"
 
-const NFTsrc =
-  "https://s3-alpha-sig.figma.com/img/a792/ddc0/c4e1193ffd08cf4918e6f696bbc8d8fe?Expires=1739750400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=tA1MLhV-UJYKMcVqezEZAD2BVQ6crHEbpi4xywyP~BBOuOZs-d1abWt5um2B~Or-u6paiDC2xJkAWJXdULy4jQO2hW3xo-j7hH1~BErQVVzcX5AP0OpmjtEK8uK2rIaISy80bu0cBbz-9ghby0MfBnsHPh~ZFDLyI04fXyBne996ISfwdkzElG~OxpQj686Kk2oXEbKcRKNDIcanDXz48Ewyq212~jfvK5ONQ0ysfuJIystfc54jispSsG3pkhCLRq-9xfGYPGTAncP6xmvpZLcUjqKlfhL79p1-n8f0X2sPA9c9iF~7RzgVMeTDAtekVfwNRTIzwgdhB~hPsJE3ww__"
-const Avtorsrc =
-  "https://s3-alpha-sig.figma.com/img/5f29/0aef/1589d4b7ed50db6bf310ffa8392539ea?Expires=1739750400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=b7iwi-eYYhoBvy59F4cXi9X7AF37WYKQOXyJpRdh2ZthPJJm0fBfp87BP9NX7a9SFelcezhsitFI8ymhwfReVCI-LkJszIJBMOMA5Lj8sZ5WOZNBHtPJ0Uod5lVFJnmm-5Z1m89s1QkI6GheHFdFYFbneIHz58Em4cqlrLlY1cdSXz1Tk1UMK2tIglLvHCBTkt31xAKLXfR3SseFAQ58iv2lOa0K~svLwwWn1BoDiomo09MVAHBb-kAJ0T9r86VrnjWlCjCXJ49PEWSexTohoX57pN0eLTwu1dRio7yl96STDAVmMYx9yHPiE6A1ID8I2016TGO~Z1017mUloSmi0g__"
+const NFTsrc = "../src/assets/data/nft.png"
+const Avtorsrc = "../src/assets/data/avatar.png"
 
 export default function Home() {
   return (
