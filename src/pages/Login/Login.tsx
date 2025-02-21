@@ -9,6 +9,7 @@ export default function Login() {
       <div className={styles.leftside}>
         <Image
           className={styles.image}
+          rounded={false}
           src="../src/assets/data/login.png"
           alt="login"
         />
