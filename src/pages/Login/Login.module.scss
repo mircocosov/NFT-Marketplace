@@ -52,7 +52,14 @@
   gap: 15px;
 }
 
-.buuton {
+.input {
+  border: 1px solid $grey-3;
+  border-radius: $radius;
+  padding: 20px 13px;
+}
+
+.button {
   @include paragraph-2-a;
   color: $white;
+  padding: 12px 0;
 }

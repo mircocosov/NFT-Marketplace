@@ -23,10 +23,26 @@ export default function Login() {
         </div>
         <div className={styles.loginContainer}>
           <div className={styles.inputs}>
-            <Input type="text" placeholder="Username" />
-            <Input type="email" placeholder="Email Address" />
-            <Input type="password" placeholder="Password" />
-            <Input type="password" placeholder="Confirm Password" />
+            <Input
+              type="text"
+              placeholder="Username"
+              className={styles.input}
+            />
+            <Input
+              type="email"
+              placeholder="Email Address"
+              className={styles.input}
+            />
+            <Input
+              type="password"
+              placeholder="Password"
+              className={styles.input}
+            />
+            <Input
+              type="password"
+              placeholder="Confirm Password"
+              className={styles.input}
+            />
           </div>
           <Button type="primary" className={styles.button}>
             Creat Account
