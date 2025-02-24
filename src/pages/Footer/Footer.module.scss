@@ -1,0 +1,68 @@
+@import "@/assets/css/config.scss";
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: $grey-2;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  max-width: 1050px;
+  margin: 0 64px;
+  width: 100%;
+  gap: 160px;
+}
+
+.footer__info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.firstContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 243px;
+}
+
+.additionalInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.additionalInfo__text {
+  color: $white-2;
+  @include paragraph-4-a;
+}
+
+.communityInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.communityInfo__text {
+  color: $white-2;
+  @include paragraph-4-a;
+}
+
+.Icons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.explore {
+  display: flex;
+  flex-direction: column;
+}
+
+.explore__text {
+  color: $white;
+  @include heading-5-b;
+}

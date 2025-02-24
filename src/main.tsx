@@ -1,13 +1,35 @@
 import React from "react"
 import ReactDOM from "react-dom/client"
-import { createBrowserRouter, RouterProvider } from "react-router-dom"
-// import Home from "@/pages/Home/Home"
+import { Navigate, createBrowserRouter, RouterProvider } from "react-router-dom"
+import Home from "@/pages/Home/Home"
 import Login from "@/pages/Login/Login"
+import Header from "./pages/Header"
+import Footer from "./pages/Footer"
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Login />,
+    element: <Navigate to="/home" replace />,
+  },
+  {
+    path: "/home",
+    element: (
+      <>
+        <Header />
+        <Home />
+        <Footer />
+      </>
+    ),
+  },
+  {
+    path: "/login",
+    element: (
+      <>
+        <Header />
+        <Login />
+        <Footer />
+      </>
+    ),
   },
 ])
 

@@ -124,7 +124,7 @@ const ICONS = {
 
 interface Props {
   className?: string
-  svgColor?: "white" | "purple" | "none"
+  svgColor?: "white" | "purple" | "grey" | "none"
   icon: keyof typeof ICONS
 }
 

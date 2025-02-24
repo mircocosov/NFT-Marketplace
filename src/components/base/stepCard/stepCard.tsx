@@ -1,6 +1,6 @@
 import style from "./stepCard.module.scss"
 import classNames from "classnames"
-import Icon from "@/assets/components/ui/Icon"
+import Icon from "@/components/ui/Icon"
 
 interface Props {
   className?: string
