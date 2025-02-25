@@ -60,9 +60,66 @@ footer {
 .explore {
   display: flex;
   flex-direction: column;
+  gap: 25px;
 }
 
 .explore__text {
   color: $white;
   @include heading-5-b;
+}
+
+.explore__buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.explore__button {
+  color: $white-2;
+  @include paragraph-4-a;
+}
+
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.subscribe__text {
+  color: $white;
+  @include heading-5-b;
+}
+
+.subscribeForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formDiscription {
+  color: $white-2;
+  @include paragraph-4-a;
+  max-width: 330px;
+}
+
+.subscribeForm__inputs {
+  display: flex;
+  flex-direction: row;
+  background: $white;
+  max-width: 420px;
+  border-radius: $radius;
+}
+
+.input {
+  @include paragraph-4-a;
+  color: $grey-1;
+  padding: 20px;
+  max-height: 22px;
+  width: 100%;
+}
+
+.button {
+  padding: 0 50px;
+  @include paragraph-2-a;
 }

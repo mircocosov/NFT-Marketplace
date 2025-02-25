@@ -46,7 +46,7 @@ export default function Login() {
             />
           </div>
           <Button type="primary" className={styles.button}>
-            Creat Account
+            Create Account
           </Button>
         </div>
       </div>

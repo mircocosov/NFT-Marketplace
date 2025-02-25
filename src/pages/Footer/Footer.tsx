@@ -28,24 +28,45 @@ export default function Footer() {
           <div className={styles.explore}>
             <h5 className={styles.explore__text}>Explore</h5>
             <div className={styles.explore__buttons}>
-              <Button type="text" link="/marketplace">
+              <Button
+                type="text"
+                link="/marketplace"
+                className={styles.explore__button}
+              >
                 Marketplace
               </Button>
-              <Button type="text" link="/ranking">
+              <Button
+                type="text"
+                link="/ranking"
+                className={styles.explore__button}
+              >
                 Ranking
               </Button>
-              <Button type="text" link="/walletconnect">
+              <Button
+                type="text"
+                link="/walletconnect"
+                className={styles.explore__button}
+              >
                 Connect a wallet
               </Button>
             </div>
           </div>
           <div className={styles.subscribe}>
-            <h5>Join Our Weekly Digest</h5>
+            <h5 className={styles.subscribe__text}>Join Our Weekly Digest</h5>
             <div className={styles.subscribeForm}>
               <p className={styles.formDiscription}>
                 Get exclusive promotions & updates straight to your inbox.
               </p>
-              <Input placeholder="Enter your email here" type="email"></Input>
+              <div className={styles.subscribeForm__inputs}>
+                <Input
+                  placeholder="Enter your email here"
+                  type="email"
+                  className={styles.input}
+                />
+                <Button type="primary" className={styles.button}>
+                  Subscribe
+                </Button>
+              </div>
             </div>
           </div>
         </div>
