@@ -18,7 +18,7 @@ export default function Header() {
         <Button type="text" link="/walletconnect">
           Connect a wallet
         </Button>
-        <Button type="primary" link="/login" className={styles.SignUp__Button}>
+        <Button type="primary" link="/signUp" className={styles.SignUp__Button}>
           <Icon icon="user" />
           <p>Sign Up</p>
         </Button>
