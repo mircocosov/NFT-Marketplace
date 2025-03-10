@@ -1,7 +1,7 @@
 import styles from "@/pages/Footer/Footer.module.scss"
 import Icon from "@/components/ui/Icon"
 import Button from "@/components/ui/Button"
-import Input from "@/components/ui/Input"
+import EmailInput from "@/components/ui/EmailInput/EmailInput"
 
 export default function Footer() {
   return (
@@ -57,16 +57,7 @@ export default function Footer() {
               <p className={styles.formDiscription}>
                 Get exclusive promotions & updates straight to your inbox.
               </p>
-              <div className={styles.subscribeForm__inputs}>
-                <Input
-                  placeholder="Enter your email here"
-                  type="email"
-                  className={styles.input}
-                />
-                <Button type="primary" className={styles.button}>
-                  Subscribe
-                </Button>
-              </div>
+              <EmailInput></EmailInput>
             </div>
           </div>
         </div>

@@ -142,7 +142,56 @@ export default function Home() {
               alt="alt"
               title="Art"
               icon="paintBrush"
-            ></NFTCategories>
+            />
+            <NFTCategories
+              className={styles.categoriesCard}
+              url={NFTsrc}
+              alt="alt"
+              title="Collectibles"
+              icon="swatches"
+            />
+            <NFTCategories
+              className={styles.categoriesCard}
+              url={NFTsrc}
+              alt="alt"
+              title="Music"
+              icon="musicNotes"
+            />
+            <NFTCategories
+              className={styles.categoriesCard}
+              url={NFTsrc}
+              alt="alt"
+              title="Photography"
+              icon="camera"
+            />
+            <NFTCategories
+              className={styles.categoriesCard}
+              url={NFTsrc}
+              alt="alt"
+              title="Video"
+              icon="videoCamera"
+            />
+            <NFTCategories
+              className={styles.categoriesCard}
+              url={NFTsrc}
+              alt="alt"
+              title="Utility"
+              icon="magicStick"
+            />
+            <NFTCategories
+              className={styles.categoriesCard}
+              url={NFTsrc}
+              alt="alt"
+              title="Sport"
+              icon="basketball"
+            />
+            <NFTCategories
+              className={styles.categoriesCard}
+              url={NFTsrc}
+              alt="alt"
+              title="Virtual Worlds"
+              icon="planet"
+            />
           </div>
         </div>
         <div className={styles.discoverNFTs}>

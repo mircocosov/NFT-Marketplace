@@ -12,7 +12,7 @@ export default function Input({ className, placeholder, type, value }: Props) {
   return (
     <input
       type={type}
-      className={classNames(styles.input, className)}
+      className={classNames(className, styles.input)}
       placeholder={placeholder}
       value={value}
     />
